@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goated Landing Page</title>
+    <script>
+        function validform() {
+            var username = document.getElementById("fname").value;
+
+            if (username === "") {
+                alert("Please enter your name");
+                return false; 
+            }
+
+            return true; 
+        }
+    </script>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    }
+
+    /* Welcome Button */
+    .welcome-btn {
+    padding: 15px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    transition: 0.4s ease;
+    margin-bottom: 50px;
+    }
+
+    .welcome-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff416c;
+    }
+
+    /* Box Container */
+    .box-container {
+    display: flex;
+    gap: 30px;
+    }
+    .box {
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    }
+
+    .box:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    </style>
+</head>
+
+<body>
+
+    <button class="welcome-btn" onclick="alert('Welcome King 👑🔥')">
+        WELCOME
+    </button>
+    <div class="box-container"></div>
+    <form action="THARUN SWATHY1.jpg" onsubmit="return validform()">
+
+        <input type="text" id="fname" placeholder="Enter your name">
+
+        <div class="box">
+            <button type="submit">akka vin ninaivugal</button>
+        </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
